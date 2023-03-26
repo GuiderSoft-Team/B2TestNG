@@ -27,7 +27,7 @@ public class JsCodes {
 
 
 
-    @Test
+    @Test   //hata veriyor
     public void test1(){
 
         //driver.get("https://the-internet.herokuapp.com/infinite_scroll");
@@ -47,10 +47,7 @@ public class JsCodes {
 
     By lAmazonSeachBox = By.xpath("//input[@id='nav-bb-search'] | //input[@id='twotabsearchtextbox']");
 
-
     By lAmazonSearcButton = By.id("nav-search-submit-button");
-
-
 
     By lAmazonProdsIphone = By.xpath("//div[@data-component-type='s-search-result' and .//*[contains(.,'iPhone')]]");
     By lAmazonSearchHeader = By.xpath("//span[text()='RESULTS']");
@@ -93,7 +90,7 @@ public class JsCodes {
         arguments[0].scrollIntoView(false)  //          -> elementin alt kismi sayfanin altinda
      */
 
-    public void scrollBy(int y){
+    public void scrollBy(int y){  //kaç birim aşagı kaydırsın
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0, " + y + ");");
     }
