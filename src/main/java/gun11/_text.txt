@@ -1,3 +1,4 @@
+A.
 1.  Yeni bir proje acin
 
 2.  pomu yapilandirin
@@ -13,3 +14,12 @@
                 site1.url =
                 site1.user =
                 site1.pass =
+
+
+
+B.
+    1.  https://demoqa.com/webtables
+    2.  Tablodaki tüm verileri siliyoruz
+    3.  3 adet yeni veri giriyoruz (DataProvider ile)
+    4.  FirstName e göre siraliyoruz ve screenschot aliyoruz.
+

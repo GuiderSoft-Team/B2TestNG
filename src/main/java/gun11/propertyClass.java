@@ -2,6 +2,7 @@ package gun11;
 
 import org.testng.annotations.Test;
 import utils.ConfigReader;
+import utils.Driver;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -81,6 +82,13 @@ public class propertyClass {
     public void testDeneme(){
         String browser = ConfigReader.get("browser");
         System.out.println(browser);
+
+        Properties p = ConfigReader.getProperties();
+        System.out.println(p.getProperty("browser"));
     }
+
+
+
+
 
 }

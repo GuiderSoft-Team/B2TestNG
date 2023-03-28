@@ -7,10 +7,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.Properties;
+
 public class Driver {
 
     //private static WebDriver driver;
     private static ThreadLocal<WebDriver> drivers = new ThreadLocal<>();
+    //public static ThreadLocal<Properties> props = new ThreadLocal<>();
 
     public static WebDriver getDriver(){
         return getDriver(Browsers.CHROME);

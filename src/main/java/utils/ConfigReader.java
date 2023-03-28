@@ -9,13 +9,13 @@ public class ConfigReader {
         config.properties dosyasindan istenilen veriyi
         static method ile return edecek
      */
-    static String file = "src/main/java/resources/config.properties";
+    static String file = "src/main/resources/config.properties";
+    static Properties properties = new Properties();
+    static FileReader fileReader;
 
     public static String get(String key){
-        Properties properties = new Properties();
-
         try {
-            FileReader fileReader = new FileReader(file);
+            fileReader = new FileReader(file);
             properties.load(fileReader);
 
             fileReader.close();
@@ -23,8 +23,20 @@ public class ConfigReader {
         }catch (Exception e){
             e.printStackTrace();
         }
-
         return "";
+    }
+
+    public static Properties getProperties(){
+        try {
+            fileReader = new FileReader(file);
+            properties.load(fileReader);
+
+            fileReader.close();
+            return properties;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return null;
     }
 
 }
