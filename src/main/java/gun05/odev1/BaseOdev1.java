@@ -16,8 +16,8 @@ import static gun05.odev1.Locators.NOTIFICATION;
 
 
 public class BaseOdev1 {
-    WebDriver driver;       // base ve child class'da kullanilacak driver
-    WebDriverWait wait;     // base ve child class'da kullanilacak wait
+    protected WebDriver driver;       // base ve child class'da kullanilacak driver
+    protected WebDriverWait wait;     // base ve child class'da kullanilacak wait
 
 
     /**
